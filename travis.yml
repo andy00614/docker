@@ -4,9 +4,6 @@ node_js:
 services:
   - docker
 
-before_install:
-  - npm install
-
 script:
   - echo  "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t andy00614/docker-nginx:latest .
