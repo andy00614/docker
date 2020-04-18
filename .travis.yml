@@ -6,4 +6,4 @@ services:
 script:
   - echo  "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t andy00614/docker-nginx:latest .
-  - docker push pea3nut/docker-nginx:latest
+  - docker push andy00614/docker-nginx:latest
