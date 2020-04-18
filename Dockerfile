@@ -1,3 +1,2 @@
 FROM nginx
-COPY ./index.html /usr/share/nginx/html/index.html
-EXPOSE 2000
+COPY ./index.html /usr/share/nginx/html
