@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  info:
+    container_name: nginx-demo
+    image: andy00614/docker-nginx
+    ports:
+      - "8082:80"
+    restart: on-failure
